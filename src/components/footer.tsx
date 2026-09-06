@@ -102,7 +102,7 @@ export default function Footer() {
         <p
           aria-hidden="true"
           className="display text-center text-[var(--dim)]"
-          style={{ fontSize: "clamp(14px, 2.4vw, 28px)", marginTop: "-0.4em" }}
+          style={{ fontSize: "clamp(14px, 2.4vw, 28px)", marginTop: "0.1em" }}
         >
           {remix ? "OR THE BEGINNING" : "THE END / OR THE BEGINNING"}
         </p>
