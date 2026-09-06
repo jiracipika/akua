@@ -49,11 +49,11 @@ export default function Hero() {
     >
       <Ambient />
 
-      {/* background KU — behind image */}
+      {/* background KU — behind image, pushed up so it clears the portrait */}
       <motion.div
         aria-hidden="true"
         style={{ x: reduce ? 0 : bgX }}
-        className="absolute inset-0 flex items-center justify-center pointer-events-none"
+        className="absolute inset-0 flex items-start justify-center pt-[4svh] pointer-events-none"
       >
         <motion.span
           className="display outline-type"
@@ -67,10 +67,10 @@ export default function Hero() {
         </motion.span>
       </motion.div>
 
-      {/* portrait */}
+      {/* portrait — sits lower so type stays visible */}
       <motion.div
         style={{ scale: reduce ? 1 : imgScale, y: imgY }}
-        className="relative z-10"
+        className="relative z-10 mt-[16svh] md:mt-[26svh]"
       >
         <motion.div
           style={{ rotate: reduce ? 0 : rotate }}
